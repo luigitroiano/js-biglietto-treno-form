@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 80%;
+  margin: auto;
+}
+/* utility class */
+.up_case{
+  text-transform: uppercase;
+}
+.d_flex{
+  display: flex;
+}
+.txt_center{
+  text-align: center;
+}
+.mg_h2{
+  margin: 40px 0 25px 0;
+}
+/* /utility class */
+.user_info{
+  justify-content: center;
+
+}

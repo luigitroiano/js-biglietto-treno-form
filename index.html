@@ -9,30 +9,64 @@
 </head>
 <body>
   <div class="container">
-    <h2 class="up_case txt_center mg_h2">calcola il prezzo del tuo biglietto</h2>
+    <h2 class="up_case txt_center txt_white mg_h2">calcola il prezzo del tuo biglietto</h2>
     <div class="upper_card">
       <div class="user_info d_flex">
         <div class="txt_center">
           <label for="user_name">Nome Cognome</label><br>
-          <input type="text" name="user_name">
+          <input type="text" name="user_name" id="user_name">
         </div>
         <div class="txt_center">
           <label for="km_to_go">Km da percorrere</label><br>
-          <input type="number" name="km_to_go">
+          <input type="number" name="km_to_go" id="km_to_go">
         </div>
         <div class="txt_center">
           <label for="age">Fascia d'età</label><br>
-          <select class="input_age" name="age">
-            <option value="minorenne">Under 18</option>
+          <select class="input_age" name="age" id="age">
+            <option value="under18">Under 18</option>
             <option value="maggiorenne">Maggiorenne</option>
-            <option value="silver">Over 65</option>
+            <option value="over65">Over 65</option>
           </select>
         </div>
       </div>
+      <div class="buttons d_flex">
+        <button id="btn-genera" type="button" name="button">Genera</button>
+        <button id="btn-annulla" type="button" name="button">Annulla</button>
+      </div>
     </div>
 
-    <h2 class="up_case txt_center mg_h2">il tuo biglietto</h2>
-    <div class="lower_card"></div>
+    <h2 class="up_case txt_center txt_white mg_h2">il tuo biglietto</h2>
+    <div class="lower_card">
+      <div class="data_summary">
+        <h4 class="up_case container_95">dettagli passeggero</h4>
+        <div class="d_flex container_95">
+          <div class="passenger">
+            <h5 class="up_case">nome passeggero</h5><br>
+            <div class="user_name"></div>
+          </div>
+
+
+          <div class="info_ticket d_flex">
+            <div>
+              <h5>Offerta</h5><br>
+              <div class="offer_type"></div>
+            </div>
+            <div>
+              <h5>Carrozza</h5><br>
+              <div class="carriage_numb"></div>
+            </div>
+            <div>
+              <h5>Codice CP</h5><br>
+              <div class="CP_code"></div>
+            </div>
+            <div>
+              <h5>Costo Biglietto</h5><br>
+              <div class="ticket_price"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
@@ -40,6 +74,6 @@
 
 
 
-
+<script src="assets/js/main.js" charset="utf-8"></script>
 </body>
 </html>

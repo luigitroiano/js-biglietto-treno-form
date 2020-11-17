@@ -32,13 +32,16 @@ btnGenera.addEventListener("click",
     document.getElementById("info_carriage_numb").innerHTML= Math.floor(Math.random() * 9) + 1;
     document.getElementById("info_CP_code").innerHTML= Math.floor(Math.random() * (100000 - 90000)) + 90000;
     document.getElementById("info_ticket_price").innerHTML= price.toFixed(2) + " €";
-
+    document.getElementById("biglietto").classList.remove("hidden");
+    
   }
 );
 
 btnAnnulla.addEventListener("click",
   function() {
-
-
+    document.getElementById("biglietto").classList.add("hidden");
+    document.getElementById("user_name").value = "";
+    document.getElementById("km_to_go").value = "";
+    document.getElementById("age").value = "";
   }
 );
